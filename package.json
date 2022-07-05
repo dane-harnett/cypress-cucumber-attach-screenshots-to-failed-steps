@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/dane-harnett/cypress-cucumber-attach-screenshots-to-failed-steps/issues"
   },
-  "homepage": "https://github.com/dane-harnett/cypress-cucumber-attach-screenshots-to-failed-steps#readme"
+  "homepage": "https://github.com/dane-harnett/cypress-cucumber-attach-screenshots-to-failed-steps#readme",
+  "devDependencies": {
+    "install": "^0.13.0",
+    "npm": "^8.13.2",
+    "sanitize-filename": "^1.6.3"
+  }
 }
