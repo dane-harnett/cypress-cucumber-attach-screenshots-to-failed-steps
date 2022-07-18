@@ -1,0 +1,29 @@
+{
+    "testFiles": "**/*.feature",
+    "ignoreTestFiles": "*.js",
+    "defaultCommandTimeout": 30000,
+    "pageLoadTimeout": 120000,
+    "chromeWebSecurity": false,
+    "reporter": "cypress-multi-reporters",
+    "reporters": [
+        "spec",
+        "cucumberjs-json",
+        ["cucumberjs-json",
+            {
+            "jsonFolder": "cypress/reports/cucumber-json",
+            "language": "en"
+            }
+        ]
+    ],
+    "video": false,
+    "retries": {
+      "runMode": 2,
+      "openMode": 0
+    },
+    "animationDistanceThreshold": 20,
+    "numTestsKeptInMemory": 0,
+    "env": {
+      "TZ": "Cuba"
+    }
+  }
+  
