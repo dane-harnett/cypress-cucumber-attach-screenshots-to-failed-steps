@@ -25,7 +25,16 @@ To use, follow these steps:
 Add the following to your `cypress/support/index.js` file:
 
 ```js
-import "cypress-cucumber-attach-screenshots-to-failed-steps";
+import { saveScreenShot } from 'cypress-cucumber-attach-screenshots-to-failed-steps';
+
+// Put as a direct execution of after each method.
+afterEach(saveScreenShot);
+
+// OR call it on your execution or after each
+afterEach(function() {
+    // Do anything you need.
+    saveScreenShot.call(this);
+});
 ```
 
 ## Contributing

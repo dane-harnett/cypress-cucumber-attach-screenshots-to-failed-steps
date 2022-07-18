@@ -1,7 +1,8 @@
-var sanitize = require("sanitize-filename");
+let sanitize = require("sanitize-filename");
 
-afterEach(() => {
+export function saveScreenShot() {
   const currentTest = cy.state('test');
+  
   if (window.cucumberJson?.generate && currentTest.state === 'failed'
       && currentTest.currentRetry() === currentTest.retries()) {
     
@@ -9,10 +10,10 @@ afterEach(() => {
     const { testState } = window;
 
     const featureName = sanitize(testState.feature.name);
-    const scenarioName = sanitize(testState.currentScenario);
+    const scenarioName = sanitize(testState.currentScenario.name);
 
     const screenshotFileName = `${featureName} -- ${scenarioName} (failed).png`;
-
+    
     cy.readFile(`${screenshotsFolder}/${Cypress.spec.name}/${screenshotFileName}`, 'base64').then((imgData) => {
       if (imgData) {
         const scenario = testState.runTests[testState.currentScenario.name];
@@ -28,4 +29,4 @@ afterEach(() => {
       }
     });
   }
-});
+}

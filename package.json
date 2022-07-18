@@ -1,6 +1,6 @@
 {
   "name": "cypress-cucumber-attach-screenshots-to-failed-steps",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "license": "MIT",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/dane-harnett/cypress-cucumber-attach-screenshots-to-failed-steps#readme",
   "devDependencies": {
+    "cypress": "^10.3.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
     "install": "^0.13.0",
     "npm": "^8.13.2",
     "sanitize-filename": "^1.6.3"
