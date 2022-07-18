@@ -18,8 +18,7 @@ import './commands';
 
 // Code coverage
 import '@cypress/code-coverage/support';
-//const { saveScreenShot } = require('../../../index.js');
-import { saveScreenShot } from '../../../index.js';
+import { saveScreenShot } from 'cypress-cucumber-attach-screenshots-to-failed-steps';
 
 function abortEarly() {
     const { currentTest } = this;

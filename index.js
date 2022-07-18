@@ -1,6 +1,6 @@
 let sanitize = require("sanitize-filename");
 
-export function saveScreenShot() {
+function saveScreenShot() {
   const currentTest = cy.state('test');
   
   if (window.cucumberJson?.generate && currentTest.state === 'failed'
@@ -30,3 +30,5 @@ export function saveScreenShot() {
     });
   }
 }
+
+exports.saveScreenShot = saveScreenShot;
