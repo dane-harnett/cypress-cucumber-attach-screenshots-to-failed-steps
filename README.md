@@ -37,6 +37,9 @@ afterEach(function() {
 });
 ```
 
+Project with tests for this library
+https://github.com/samuelpampolini/cypress-cucumber-attach-screenshots-to-failed-steps-tests
+
 ## Contributing
 
 To contribute, follow these steps:

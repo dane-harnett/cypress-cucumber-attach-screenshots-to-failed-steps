@@ -1,7 +1,0 @@
-<testsuite name="Mocha Tests" tests="1" failures="0" errors="1" skipped="0" timestamp="Mon, 18 Jul 2022 10:56:09 GMT" time="1.241">
-<testcase classname="Testing failing visiting Cypress example" name="Testing the report with a fail scenario" time="0.434"><failure>expected &#x27;fail data&#x27; to contain &#x27;success&#x27;
-AssertionError: expected &#x27;fail data&#x27; to contain &#x27;success&#x27;
-    at Context.eval (http://localhost:3083/__cypress/tests?p=cypress\integration\2-failing-test\failing-test.feature:41:31)
-    at Context.resolveAndRunStepDefinition (http://localhost:3083/__cypress/tests?p=cypress\integration\2-failing-test\failing-test.feature:10414:29)
-    at Context.eval (http://localhost:3083/__cypress/tests?p=cypress\integration\2-failing-test\failing-test.feature:9735:35)</failure></testcase>
-</testsuite>
